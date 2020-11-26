@@ -196,5 +196,13 @@ p {
         position: static;
         transform: rotate(0);
     }
+
+    .container-fluid {
+        padding: 7% 5%;
+    }
+
+    .features-box {
+        padding: 0%;
+    }
     
 }
