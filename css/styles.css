@@ -1,0 +1,200 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+/* Sections */
+.colored-section {
+    background: #ff4c68;
+    color: #fff;
+}
+
+.white-section {
+    background: #fff;
+}
+
+/* Containers */
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/* Buttons */
+
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    padding: 0 0 4.5rem;
+    
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: light;
+    font-size: 1.2rem;
+}
+
+/* Title/ Hero */
+
+#title {
+    text-align: left;
+}
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+}
+
+
+.hero {
+    margin-top: 20px;
+}
+
+.phone-mockup {
+    transform: rotate(20deg);
+    width: 60%;
+
+    /* Bild teilweise versteckem */
+    position: absolute; /* A Ist weiter OBEN in HTML + position >> ist weiter UNTEN vom "z-index" her, ohne dass z-index stellen muss */
+    right: 30%;
+}
+
+/* Features */
+#features {
+    position: relative; /* B Ist weiter UNTEN in HTML + position >> ist weiter OBEN vom "z-index" her, ohne dass z-index stellen muss */
+}
+
+.features-container {
+    text-align: center;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+}
+
+.features-box {
+    padding: 5%;
+}
+
+.features-icon {
+    color: #ef8172;
+    font-size: 4rem;
+    padding-bottom: 20px;
+}
+
+.features-icon:hover {
+    color: #ff4c68;
+}
+
+/* Testimonials */
+
+#testimonials {
+    background: #ef8172;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.carousel {
+    padding-bottom: 100px;
+}
+
+/* Press */
+
+#press {
+    background: #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* Pricing */
+
+#pricing {
+    line-height: 1.2;
+    padding: 100px;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+/* Call to Action */
+
+
+
+/* Footer */
+
+.social-icons i {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.copyright {
+    font-size: .75rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1100px) {
+    #title {
+        text-align: center;
+    }
+    
+    .phone-mockup {
+        position: static;
+        transform: rotate(0);
+    }
+    
+}
