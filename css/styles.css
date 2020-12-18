@@ -1,7 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-size: 1.5vw;
     line-height: 1.4;
 }
 
@@ -14,6 +13,11 @@ p {
     color: #8f8f8f;
 }
 
+.btn {
+    font-size: 1rem;
+}
+
+
 /* Headings */
 
 .big-heading {
@@ -25,7 +29,7 @@ p {
 }
 
 .section-heading {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1.2;
 }
 
@@ -63,13 +67,17 @@ p {
 }
 
 .nav-item {
-    padding: 0 18px;
+    padding: 0 10px;
 }
 
 .nav-link {
     font-family: 'Montserrat', sans-serif;
     font-weight: light;
-    font-size: 1.2rem;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid #fff;
 }
 
 /* Title/ Hero */
@@ -88,12 +96,26 @@ p {
 }
 
 .phone-mockup {
-    transform: rotate(20deg);
+    transform: 
+        rotate(20deg)
+        scale(1.1);
+
     width: 60%;
 
     /* Bild teilweise versteckem */
     position: absolute; /* A Ist weiter OBEN in HTML + position >> ist weiter UNTEN vom "z-index" her, ohne dass z-index stellen muss */
     right: 30%;
+}
+
+.scroll {
+    animation: rotate 5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    50% {
+        transform: 
+            rotate(10deg);
+    }
 }
 
 /* Features */
@@ -103,20 +125,21 @@ p {
 
 .features-container {
     text-align: center;
+    margin: 0 10%;
 }
 
 .feature-title {
-    font-size: 2vw;
+    font-size: 1.25rem;
 }
 
 .features-box {
     padding: 5%;
-    font-size: 1.5vw;
+    font-size: 1rem;
 }
 
 .features-icon {
     color: #ef8172;
-    font-size: 4rem;
+    font-size: 2rem;
     padding-bottom: 20px;
 }
 
@@ -167,13 +190,66 @@ p {
 
 /* Pricing */
 
+.card {
+    box-shadow: 0 0 10px #ff4c673e;
+    transition: transform 250ms ease-in-out;
+    margin-top: 50px;
+}
+
+.card-header {
+    background-color: #ff4c673e;
+}
+
+.labrador-card {
+    transform: scale(1.1);
+    z-index: 100;
+}
+
 #pricing {
     line-height: 1.2;
     padding: 100px;
+    font-size: 1rem;
+}
+
+#pricing .row {
+    padding: 0 10%;
 }
 
 .pricing-column {
     padding: 3% 2%;
+}
+
+.price-text {
+    color: #ff4c68;
+    
+}
+
+.pricing-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    padding: 20px 0; 
+    height: 200px;
+}
+
+.signup.btn-outline-dark  {
+    border-color: #ff4c68;
+}
+
+.signup.btn-outline-dark:hover  {
+    background-color: #ff4c68;
+    border: none;
+}
+
+.signup.btn-dark  {
+    background-color: #ff4c68;
+    border: none;
+}
+
+.signup.btn-dark:hover  {
+    border: 1px solid #ff4c68;;
+    background-color: transparent;
+    color: #000;
 }
 
 /* Call to Action */
@@ -183,6 +259,13 @@ p {
 }
 
 /* Footer */
+footer {
+    font-size: 1rem;
+}
+
+footer .container-fluid {
+    height: 200px;
+}
 
 .social-icons i {
     display: inline-block;
@@ -213,11 +296,15 @@ p {
 
     .features-box {
         padding: 2%;
-        font-size: 3vw;
     }
 
-    .feature-title {
-        font-size: 4vw;
+    .card-header h3 {
+        font-size: 1.5rem;
     }
-    
+}
+
+@media (max-width: 980px){
+    #pricing .row {
+        margin: 0 20%;
+    }
 }
