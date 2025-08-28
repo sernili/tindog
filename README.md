@@ -5,7 +5,7 @@ A tinder-inspired dating-website for dogs 🐕
 from "The Complete 2020 Web Development Bootcamp" by Dr. Angela Yu on Udemy
 
 
-with own optimiziations inclusing
+with own optimiziations including
 - design updates and better responsiveness
 - more testimonials
 - variables for commonly used colors
